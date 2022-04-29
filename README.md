@@ -31,8 +31,36 @@ The basic menu structure was somewhat based on ![Jon Dechiro's suggestion](https
 | | TortoiseSVN | `MSI Afterburner`
 | | WinSCP | WinDirStat
 
-## Note
+### Note
 - '\*' Behind the name of an application points to the fact that the installer file is downloaded from the publisher's official repository and not through MS Store. Those installers will automatically be downloaded inside ```~\Downloads\``` after which the installation process will start. The user is able to select installation destination of the application.
 - `App` Application written in this style means that Chocolatey package manager is being utilized. User will be prompted for confirmation inside the terminal.
 
 Those adjustments were needed as not all used by me applications were available from the official MS Store and WinGet repos.
+
+## How To Run
+
+### Paste this command into Powershell (admin):
+
+```iex ((New-Object System.Net.WebClient).DownloadString('https://tinyurl.com/InstallerScript'))```
+
+### Use shorter command into Powershell (admin):
+
+```iwr -useb https://tinyurl.com/InstallerScript | iex```
+
+### Manual script running:
+
+Download the script '.ps1' file from ![here.](https://github.com/KaiserDMC/InitialSetupProgramInstaller/releases/tag/1.0.0) Navigate to PowerShell application on your desktop. ** Dont forget to * Right-click * run as 'Administrator'. ** Navigate to the file download destination folder, most likely ```~\Downloads\```. Run the following command:
+
+```.\InitialSetupProgramInstaller.ps1```
+
+#### Note
+If you have NEVER run scripts before, you will need to enable that option by running the following command:
+```set-executionpolicy remotesigned```
+PowerShell must once again be *Run as... 'Administrator'*
+
+## Tested
+This script was tested and ran without any issues on a brand new instance of Windows 10 Pro, build 21H2.
+
+## Troubleshooting & Contributions
+If you have any issues or encounter any bugs, [report them here.](https://github.com/KaiserDMC/InitialSetupProgramInstaller/issues) If you would like to add more apps to the script or think you can fix some issues, please feel free to create a pull requests.
+
