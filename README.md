@@ -19,7 +19,7 @@ The basic menu structure was loosely based on Jon Dechiro's suggestion (over at 
 | Mozilla Firefox | Discord | Handbrake | 7-Zip | Steam
 | Google Chrome | TeamSpeak 3 | K-Lite Codec | Acrobat Reader DC | Battle.Net*
 | | | OBS Studio | Libre Office Suite | Origin*
-| | | FFmpeg | Oracle JDK 17 | Ubisoft connect
+| | | `FFmpeg` | Oracle JDK 17 | Ubisoft connect
 | | | | Logitech Gaming Software | PS Remote Play
 | | | | Obsidian (Notes)
 | | | | ShareX
@@ -51,7 +51,7 @@ Those adjustments were needed as not all used by me applications were available 
 iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/InstallerScript'))
 ```
 
-### Use shorter command into Powershell (admin):
+### Or use shorter command into Powershell (admin):
 
 ```ps
 iwr -useb https://bit.ly/InstallerScript | iex
