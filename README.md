@@ -48,13 +48,13 @@ Those adjustments were needed as not all used by me applications were available 
 ### Paste this command into Powershell (admin):
 
 ```ps
-iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/InstallerScript'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/InstallerScriptMain'))
 ```
 
 ### Or use shorter command into Powershell (admin):
 
 ```ps
-iwr -useb https://bit.ly/InstallerScript | iex
+iwr -useb https://bit.ly/InstallerScriptMain | iex
 ```
 
 ### Or Manually:
