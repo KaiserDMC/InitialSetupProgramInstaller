@@ -54,7 +54,7 @@ iwr -useb https://tinyurl.com/InstallerScript | iex
 
 ### Or Manually:
 
-Download the '.ps1' file from ![here.](https://github.com/KaiserDMC/InitialSetupProgramInstaller/releases/tag/1.0.0) Navigate to PowerShell application on your computer. **Dont forget to *Right-click* run as 'Administrator'.** Navigate to the downloaded file's folder, most likely ```~\Downloads\```.  
+Download the '.ps1' file from ![here.](https://github.com/KaiserDMC/InitialSetupProgramInstaller/releases/) Navigate to PowerShell application on your computer. **Dont forget to *Right-click* run as 'Administrator'.** Navigate to the downloaded file's folder, most likely ```~\Downloads\```.  
 Run the following command:
 
 ```ps
