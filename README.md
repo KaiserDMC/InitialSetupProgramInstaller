@@ -3,9 +3,14 @@
 This is a simple PowerShell script used for installation of various software during initial Windows setup or at a later stage if required.  
 The script utilizes mostly WinGet but for some apps Chocolatey package manager is used.
 
+## Menu Screenshot
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/659853809165533186/969615512478818334/unknown.png" alt="Initial Menu Layout"/>
+</p>
+
 ## Inspiration
 This script was inspired by ![ChrisTitusTech's win10script](https://github.com/ChrisTitusTech/win10script), however it only incorporates software installation! No update policies or privacy settings are being changed or can be changed with it. The script's UI is also completely Terminal based.  
-The basic menu structure was loosely based on ![Jon Dechiro's suggestion](https://stackoverflow.com/users/6595659/jon-dechiro).
+The basic menu structure was loosely based on Jon Dechiro's suggestion (over at Stackoverflow).
 
 ## Current Applications available
 
@@ -14,7 +19,7 @@ The basic menu structure was loosely based on ![Jon Dechiro's suggestion](https:
 | Mozilla Firefox | Discord | Handbrake | 7-Zip | Steam
 | Google Chrome | TeamSpeak 3 | K-Lite Codec | Acrobat Reader DC | Battle.Net*
 | | | OBS Studio | Libre Office Suite | Origin*
-| | | | Oracle JDK 17 | Ubisoft connect
+| | | FFmpeg | Oracle JDK 17 | Ubisoft connect
 | | | | Logitech Gaming Software | PS Remote Play
 | | | | Obsidian (Notes)
 | | | | ShareX
@@ -43,13 +48,13 @@ Those adjustments were needed as not all used by me applications were available 
 ### Paste this command into Powershell (admin):
 
 ```ps
-iex ((New-Object System.Net.WebClient).DownloadString('https://tinyurl.com/InstallerScript'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/InstallerScript'))
 ```
 
 ### Use shorter command into Powershell (admin):
 
 ```ps
-iwr -useb https://tinyurl.com/InstallerScript | iex
+iwr -useb https://bit.ly/InstallerScript | iex
 ```
 
 ### Or Manually:
